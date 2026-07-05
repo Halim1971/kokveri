@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kök Veri | Yazılım. Veri. Otomasyon.</title>
+  <meta name="description" content="Kök Veri, veri analizi, web tabanlı yazılım ve süreç otomasyonu alanlarında kurumsal çözümler geliştiren bir teknoloji şirketidir.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <img class="brand-image" src="{{ url_for('static', filename='logo.jpg') }}" alt="Kök Veri Teknolojileri">
+        <div class="hero-copy">
+          <p class="eyebrow">Kök Veri Teknolojileri Ltd. Şti.</p>
+          <h1>Yazılım. Veri. Otomasyon.</h1>
+          <p class="lead">Kök Veri, veri analizi, web tabanlı yazılım ve süreç otomasyonu alanlarında kurumsal çözümler geliştiren bir teknoloji şirketidir.</p>
+          <div class="hero-actions">
+            <a class="button" href="mailto:halim.cermikli@kokveri.com.tr">İletişime Geç</a>
+            <a class="text-link" href="tel:+902163732868">0216 373 28 68</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <p class="eyebrow">Projeler</p>
+        <h2 id="projects-title">Ürün ve platformlarımız</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <a href="https://bitektas.com" target="_blank" rel="noopener">
+            <img src="{{ url_for('static', filename='bitektas.jpg') }}" alt="bitektas.com">
+          </a>
+          <a class="domain" href="https://bitektas.com" target="_blank" rel="noopener">bitektas.com</a>
+        </article>
+        <article class="project-card">
+          <a href="https://masanibul.com" target="_blank" rel="noopener">
+            <img src="{{ url_for('static', filename='masanibul.jpg') }}" alt="masanibul.com">
+          </a>
+          <a class="domain" href="https://masanibul.com" target="_blank" rel="noopener">masanibul.com</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section capabilities" aria-labelledby="capabilities-title">
+      <div class="section-head">
+        <h2 id="capabilities-title">Kurumsal teknoloji çözümleri</h2>
+      </div>
+      <div class="capability-grid">
+        <div class="capability-card">
+          <h3>Web Tabanlı Yazılım</h3>
+          <p>İş süreçlerine özel, güvenilir ve sürdürülebilir web uygulamaları.</p>
+        </div>
+        <div class="capability-card">
+          <h3>Veri Analizi</h3>
+          <p>Dağınık veriyi anlamlı raporlara ve karar destek çıktısına dönüştürme.</p>
+        </div>
+        <div class="capability-card">
+          <h3>Süreç Otomasyonu</h3>
+          <p>Tekrarlı operasyonları azaltan, takip edilebilir otomasyon akışları.</p>
+        </div>
+        <div class="capability-card">
+          <h3>Yapay Zekâ Destekli Çözümler</h3>
+          <p>Veri, metin ve operasyon akışlarını akıllı sistemlerle güçlendirme.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">İletişim</h2>
+      </div>
+      <div class="contact-card">
+        <a href="tel:+902163732868">0216 373 28 68</a>
+        <a href="mailto:info@kokveri.com.tr">info@kokveri.com.tr</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Kök Veri Teknolojileri Ltd. Şti.</strong>
+    <span>© 2026 Kök Veri. All rights reserved.</span>
+  </footer>
+</body>
+</html>
