@@ -2,7 +2,7 @@ import os
 from datetime import date
 from xml.sax.saxutils import escape
 
-from flask import Flask, Response, render_template
+from flask import Flask, Response, render_template, send_from_directory
 
 
 app = Flask(__name__)
@@ -34,6 +34,11 @@ def sitemap_url_entry(loc, lastmod, changefreq="weekly", priority="1.00"):
 @app.route("/")
 def index():
     return render_template("index.html")
+
+
+@app.route("/logo-email.png")
+def logo_email():
+    return send_from_directory(app.static_folder, "logo-email.png", mimetype="image/png")
 
 
 @app.route("/sitemap.xml")
