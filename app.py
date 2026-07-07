@@ -36,9 +36,10 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/logoemail.png")
 @app.route("/logo-email.png")
 def logo_email():
-    return send_from_directory(app.static_folder, "logo-email.png", mimetype="image/png")
+    return send_from_directory(app.static_folder, "logoemail.png", mimetype="image/png")
 
 
 @app.route("/sitemap.xml")
